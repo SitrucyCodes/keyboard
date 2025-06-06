@@ -1,0 +1,4 @@
+config SHIELD_JOOSE_LEFT
+    def_bool$(shields_list_contains,joose_left)
+config SHIELD_JOOSE_RIGHT
+    def_bool$(shields_list_contains,joose_right)
