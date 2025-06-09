@@ -38,7 +38,7 @@
         kscan = <&kscan0>;
     };
 
-    &nice_view_spi {
+    nice_view_spi {
         cs-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>
     };
 };
