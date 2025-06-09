@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: sitrucy
+      url-base: https://github.com/SitrucyCodes
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-keyboard-joose
+      remote: sitrucy
+      revision: main
   self:
     path: config
