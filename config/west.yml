@@ -11,7 +11,6 @@ manifest:
       import: app/west.yml
     - name: keyboard
       remote: sitrucy
-      path: ../app/boards/Joose
       revision: main
   self:
     path: config
