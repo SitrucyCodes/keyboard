@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-keyboard-joose
+    - name: keyboard
       remote: sitrucy
       revision: main
   self:
