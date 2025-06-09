@@ -2,8 +2,7 @@
 
 / {
     chosen {
-        zmk,kscan = kscan0;
-        zmk,matrix_transform = &transform0;
+        zmk,physical-layout = &physical_layout0;
     }
 
     kscan0: kscan0 {
@@ -31,6 +30,13 @@
                     RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10) 
         >;
     }
+
+    physical_layout0: physical_layout0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Joose Layout";
+        transform = <&transform0>;
+        kscan = <&kscan0>;
+    };
 
     &nice_view_spi {
         cs-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>
