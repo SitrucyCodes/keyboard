@@ -2,11 +2,11 @@
 
 / {
     chosen {
-        zmk,kscan = &default_kscan;
-        zmk,matrix_transform = &default_transform;
+        zmk,kscan = kscan0;
+        zmk,matrix_transform = &transform0;
     }
 
-    default_kscan: kscan {
+    kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
         diode-direction = "col2row";
@@ -19,7 +19,7 @@
             ;
     }
 
-    default_transform: matrix_transform {
+    transform0: transform0 {
         compatible = "zmk,matrix-transform";
         rows = <4>;
         columns = <12>;
@@ -33,6 +33,6 @@
     }
 
     &nice_view_spi {
-        cs-gpios = <&gpio1 06 GPIO_ACTIVE_HIGH>
+        cs-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>
     }
 }
