@@ -1,5 +1,6 @@
 if SHIELD_JOOSE_LEFT
 
+config ZMK_KEYBOARD_NAME
     default "Sitrucy Keeb"
 
 config ZMK_SPLIT_ROLE_CENTRAL
