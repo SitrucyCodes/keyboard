@@ -1,6 +1,5 @@
 if SHIELD_JOOSE_LEFT
 
-config SHIELD_JOOSE_LEFT
     default "Sitrucy Keeb"
 
 config ZMK_SPLIT_ROLE_CENTRAL
