@@ -23,14 +23,14 @@
 
                 symbols {
 // -----------------------------------------------------------------------------------------
-// |     |  &  |  *  |     |  (  |  )  |   |  7  |  8  |  9  |  *  |    |    |
-// |     |  $  |  %  |  ^  |  {  |  }  |   |  4  |  5  |  6  |  -  |    |    |
-// |  ~  |  !  |  @  |  #  |  [  |  ]  |   |  1  |  2  |  3  |  +  |    |  = |
+// |     |  &  |  *  |     |  (  |  )  |   |  7  |  8  |  9  |  *  |  BLPRV  |    |
+// |     |  $  |  %  |  ^  |  {  |  }  |   |  4  |  5  |  6  |  -  |  BLNXT  |    |
+// |  ~  |  !  |  @  |  #  |  [  |  ]  |   |  1  |  2  |  3  |  +  |  BLCLR  |  = |
 //              |  |  |  | LAY0 | LAY2 |   | / | 0 | RET |  |  |
                         bindings = <
-   &none &kp AMPS &kp STAR &none &kp LPAR &kp RPAR &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &none &none
-   &none &kp DLLR &kp PRCNT &kp CARET &kp LEFT_BRACE &kp RIGHT_BRACE &kp N4 &kp N5 &kp N6 &kp KP_MINUS &none &none
-   &kp TILDE &kp EXCL &kp AT &kp HASH &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp N1 &kp N2 &kp N3 &kp KP_PLUS &none &kp EQUAL
+   &none &kp AMPS &kp STAR &none &kp LPAR &kp RPAR &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &bt BT_PRV &none
+   &none &kp DLLR &kp PRCNT &kp CARET &kp LEFT_BRACE &kp RIGHT_BRACE &kp N4 &kp N5 &kp N6 &kp KP_MINUS &bt BT_NXT &none
+   &kp TILDE &kp EXCL &kp AT &kp HASH &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp N1 &kp N2 &kp N3 &kp KP_PLUS &bt BT_CLR &kp EQUAL
                            &none &to 0 &none &none &to 2   &kp KP_SLASH &none &none &kp N0 &kp RET
                         >;
                         label = "Symbols";
